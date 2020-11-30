@@ -1,0 +1,36 @@
+{
+  "name": "node-red-contrib-wmbus-client",
+  "version": "1.0.14",
+  "description": "Node-red implementation of wireless m-bus client",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunsetdk/node-red-contrib-wmbus-client.git"
+  },
+  "author": "René Jensen",
+  "license": "MIT",
+  "keywords": [
+    "node-red",
+    "kamstrup",
+    "wmbus"
+  ],
+  "node-red": {
+    "nodes": {
+      "kamstrup21": "kamstrup21.js",
+      "hummie1": "hummie1.js",
+      "config": "config.js"
+    }
+  },
+  "dependencies": {
+    "bitwise-xor": "0.0.0",
+    "wmbus-client": "^0.2.6",
+    "serialport": "^9.0.2"
+  },
+  "devDependencies": {},
+  "dependencies_develop": {
+    "bitwise-xor": "^0.0.0",
+    "wmbus-client": "file:../../wmbus-client/wmbus-client"
+  }
+}
